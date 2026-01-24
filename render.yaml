@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-telegram-bot # Имя вашего сервиса, должно совпадать с тем, что вы дали на Render
+    env: python
+    pythonVersion: 3.11.x # Или 3.10.x. Укажите конкретную стабильную версию Python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false # Это означает, что вы установите значение BOT_TOKEN через интерфейс Render, а не здесь
