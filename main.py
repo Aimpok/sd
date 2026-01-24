@@ -23,7 +23,7 @@ async def send_welcome_with_photo(message: types.Message):
         return
 
     markup = types.InlineKeyboardMarkup()
-    open_bitly_button = types.InlineKeyboardButton("Open Bitly", url="https://https://aimpok.github.io/bitly/") 
+    open_bitly_button = types.InlineKeyboardButton("Open Bitly", url="https://aimpok.github.io/bitly/") 
     markup.add(open_bitly_button)
     bitly_news_button = types.InlineKeyboardButton("Bitly News", url="https://t.me/BitlyNews") 
     markup.add(bitly_news_button)
