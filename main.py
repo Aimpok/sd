@@ -14,7 +14,7 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 # Укажите имя файла изображения
-IMAGE_FILENAME = 'bitly_logo.png' 
+IMAGE_FILENAME = 'Welcome.png' 
 
 # *** ВАЖНО: Замените этот URL на URL вашего Mini App, который вы получили с GitHub Pages ***
 # Например: "https://your_github_username.github.io/bitly-webapp/"
